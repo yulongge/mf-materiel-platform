@@ -19,7 +19,8 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': resolvePath('src'),
-      '@styles': resolvePath('src/assets/styles')
+      '@styles': resolvePath('src/assets/styles'),
+      '@views': resolvePath('src/views')
     }
   }
 })
