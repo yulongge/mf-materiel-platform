@@ -1,27 +1,38 @@
-# Vue 3 + Typescript + Vite
+# 物料平台
+> 项目： 物料平台
 
-This template should help get you started developing with Vue 3 and Typescript in Vite.
+### 1. 安装及运行
 
-## Recommended IDE Setup
+```sh
+# 安装
 
-[VSCode](https://code.visualstudio.com/) + [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur). Make sure to enable `vetur.experimental.templateInterpolationService` in settings!
+npm install
+# or
+yarn install
 
-### If Using `<script setup>`
+# 运行
+npm run dev
 
-[`<script setup>`](https://github.com/vuejs/rfcs/pull/227) is a feature that is currently in RFC stage. To get proper IDE support for the syntax, use [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) instead of Vetur (and disable Vetur).
+# 预览
+npm run preview
 
-## Type Support For `.vue` Imports in TS
+# 打包
+npm run build
+```
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can use the following:
+### 2. 规范
+> 代码规范，提交规范 。。。
+#### 2.1 代码规范
 
-### If Using Volar
+代码风格约束
 
-Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
+- `eslint`：代码质量检测（用var还是let，用==还是===...）
+- `prettier`：代码风格检测（加不加尾逗号，单引号还是双引号...）
+- `eslint-config-prettier`：解决ESLint与Prettier的风格冲突
+- `eslint-plugin-prettier`：ESLint的插件，集成Prettier的功能
+- `eslint-plugin-vue`：ESLint的插件，增加Vue的检测能力
 
-### If Using Vetur
-
-1. Install and add `@vuedx/typescript-plugin-vue` to the [plugins section](https://www.typescriptlang.org/tsconfig#plugins) in `tsconfig.json`
-2. Delete `src/shims-vue.d.ts` as it is no longer needed to provide module info to Typescript
-3. Open `src/main.ts` in VSCode
-4. Open the VSCode command palette
-5. Search and run "Select TypeScript version" -> "Use workspace version"
+```sh
+npm i eslint prettier eslint-config-prettier eslint-config-standard eslint-plugin-prettier eslint-plugin-import eslint-plugin-vue eslint-plugin-node eslint-plugin-promise eslint-plugin-standard  @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser -D
+```
+### 技术栈
