@@ -1,5 +1,5 @@
 <template>
-  <HelloWorld msg="物料平台" />
+  <router-view />
 </template>
 
 <script lang="ts">
@@ -14,8 +14,9 @@
   })
 </script>
 
-<style lang="scss" scope>
+<style lang="scss" sc>
   #app {
+    background-color: $background-color;
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

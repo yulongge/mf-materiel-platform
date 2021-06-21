@@ -1,11 +1,14 @@
 <template>
-  <div class="home-container page-container"> 物料平台 </div>
+  <Header />
 </template>
 <script lang="ts">
   import { defineComponent } from 'vue'
-
+  import Header from '../components/Header.vue'
   export default defineComponent({
     name: 'Home',
+    components: {
+      Header
+    },
     data() {
       return {}
     }
