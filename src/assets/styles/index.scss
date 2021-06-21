@@ -1,0 +1,9 @@
+@import './\_variables.scss';
+@import './common.scss';
+@import './transition.scss';
+@import './mixins.scss';
+
+html,
+body {
+  background-color: $background-color;
+}
